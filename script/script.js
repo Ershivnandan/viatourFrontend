@@ -1,16 +1,23 @@
-// folders
-// add header page
-fetch("./pages/hero.html")
-  .then((res) => res.text())
-  .then((data) => (document.getElementById("hero").innerHTML = data));
 
-// add trending page
-fetch("./pages/trending.html")
-  .then((res) => res.text())
-  .then((data) => (document.getElementById("trending").innerHTML = data));
 
-// add footer page
-fetch("./pages/footer.html")
-  .then((res) => res.text())
-  .then((data) => (document.getElementById("footer").innerHTML = data));
+function loadComponent(url, targetId) {
+  fetch(url)
+      .then((res) => {
+          if (!res.ok) {
+              throw new Error("Network response was not ok");
+          }
+          return res.text();
+      })
+      .then((data) => {
+          console.log(data)
+          document.getElementById(targetId).innerHTML = data;
 
+          const script = data.find(script)
+      })
+      .catch((error) => console.error("Error loading component:", error));
+}
+
+// Load the numbers component into the numbersContainer div
+loadComponent('./pages/hero.html', 'hero');
+loadComponent('./pages/trending.html', 'trending');
+loadComponent('./pages/footer.html', 'footer');
