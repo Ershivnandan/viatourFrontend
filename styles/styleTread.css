@@ -1,0 +1,56 @@
+.tours {
+  padding: 2rem;
+  max-width: 1320px;
+  margin: 50px auto;
+}
+
+.headingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
+  color: #05073c;
+}
+.leftHeading {
+  float: left;
+}
+.leftHeading p {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 700;
+}
+.rightHeading {
+  margin-left: auto;
+}
+.main_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.img1 {
+  grid-row: 1 / span 2;
+}
+.img3 {
+  grid-column: 3 / span 2;
+}
+
+.footer_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+footer {
+  margin-top: 50px;
+}
+.footer_content img {
+  margin-bottom: 15px;
+}
+.footer_content h5 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 27px;
+}
+.footer_content p {
+  font-weight: 400;
+  font-size: 15px;
+}
