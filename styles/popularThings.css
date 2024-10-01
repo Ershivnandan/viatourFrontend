@@ -1,0 +1,124 @@
+.tours {
+  padding: 2rem;
+  max-width: 1320px;
+  margin: 100px auto;
+}
+
+.headingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 1rem 1rem 2rem 1rem;
+  color: #05073c;
+}
+.leftHeading {
+  float: left;
+}
+.leftHeading p {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 700;
+}
+.rightHeading {
+  margin-left: auto;
+}
+.tourCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.titleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.titleGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.titleGriditem2 {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.buttonCircle {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+.tour-card {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #05073c;
+}
+
+.tour-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.cardDetails {
+  padding: 10px;
+}
+.tour-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 15.88px;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.tour-card .tour-location {
+  font-size: 0.9rem;
+  color: #777;
+  padding: 5px 0 0 10px;
+}
+.item2 {
+  text-align: end;
+}
+
+.tour-card .tour-rating {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.tour-rating{
+  text-align: center;
+}
+
+.tour-card .tour-price {
+  font-weight: 500;
+}
+.item2 p strong {
+  padding-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .tourCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .leftHeading {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tourCards {
+    grid-template-columns: 1fr;
+  }
+  .leftHeading p {
+    font-size: 18px;
+  }
+}
